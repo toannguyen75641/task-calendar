@@ -162,8 +162,9 @@
 		var period = (endPeriod - startPeriod) / oneDay;
 		return Math.round(period + 1);
 	}
-
 	var totalDays = calculatePeriod(startDate, endDate);
+	var end = calculatePeriod('7-3-2019', '31-5-2019');
+	console.log(end);
 	taskCalendar.css('width', totalDays*30);   
 
 	//render task
